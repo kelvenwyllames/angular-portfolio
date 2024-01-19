@@ -26,15 +26,24 @@ yarn-error.log
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
+.history/
 
-# Miscellaneous
+# Angular-specific
 /.angular/cache
+/.angular/assets
+/.angular/eggheadio-lessons.json
+
+# Sass
 .sass-cache/
+
+# Connect
 /connect.lock
+
+# Test coverage
 /coverage
+
+# TypeScript
 /libpeerconnection.log
-testem.log
 /typings
 
 # System files
