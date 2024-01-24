@@ -1,65 +1,112 @@
-.s-about-me
+.s-about
     width: 100%
-    height: 724px
+    height: 924px
     display: flex
     justify-content: center
     align-items: center
-    gap: 2rem
+    flex-direction: column
+    gap: 3rem
 
-    img
-        width: 350px
-        padding: 1rem
-        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%
-        overflow: hidden
-
-    .right-about
-        width: 700px
-        height: 450px
+    .container-about
+        width: 100%
         display: flex
+        justify-content: center
         align-items: center
-        flex-direction: column
-        padding: 2rem
+        flex-direction: row
 
-        p
-            font-size: 16px
-            font-style: normal
-            text-align: justify
-            line-height: 25px
-            font-weight: 400
-            color: #c5c0c0
+        img
+            width: 350px
+            padding: 1rem
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%
+            overflow: hidden
 
-        .social-flex-profile
+        .right-about
+            width: 700px
+            height: 450px
             display: flex
-            justify-content: center
             align-items: center
-            flex-direction: row
-            gap: 1.5rem
+            flex-direction: column
+            padding: 2rem
 
-            .bg-social-profile
-                width: 3rem
-                height: 3rem
+            p
+                font-size: 1rem
+                font-style: normal
+                text-align: justify
+                line-height: 25px
+                font-weight: 400
+                color: #c5c0c0
+
+            .social-flex-profile
                 display: flex
                 justify-content: center
                 align-items: center
-                margin-top: 1.5rem
-                font-size: 1.5rem
-                border-radius: 6px
-                background-color: #1a1a1a
-                border: 2px solid #1f1f1f
-                transition: 0.5s all ease-in-out
+                flex-direction: row
+                gap: 1.5rem
 
-                > a
-                    color: #6f7172
-                    text-decoration: none
+                .bg-social-profile
+                    width: 3rem
+                    height: 3rem
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-top: 1.5rem
+                    font-size: 1.5rem
+                    border-radius: 6px
+                    background-color: #1a1a1a
+                    border: 2px solid #1f1f1f
+                    transition: 0.5s all ease-in-out
+
+                    > a
+                        color: #6f7172
+                        text-decoration: none
+
+                        &:hover
+                            color: #e64a19
 
                     &:hover
-                        color: #e64a19
+                        transform: scale(1.15)
+                        border: 2.5px solid #e64919c5
 
-                &:hover
-                    transform: scale(1.15)
-                    border: 2.5px solid #e64919c5
+    .container-habilidades
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+        .img-skills
+            display: grid
+            grid-template-columns: repeat(11, 1fr)
+            grid-template-rows: 1fr
+            grid-column-gap: 1.25rem
 
 @media (max-width: 992px)
-    .s-about-me
-        height: 1024px
-        flex-direction: column-reverse
+    .s-about
+        height: 1100px
+        .container-about
+            flex-direction: column
+            .right-about
+                p
+                    width: 80%
+                    font-size: 0.938rem
+
+        .container-habilidades
+            .img-skills
+                grid-template-columns: repeat(6, 1fr)
+                grid-template-rows: repeat(2, 1fr)
+                grid-row-gap: 1.25rem
+
+@media (max-width: 576px)
+    .s-about
+        height: 1250px
+        .container-about
+            .right-about
+                p
+                    width: 50%
+                    font-size: 0.838rem
+
+        .container-habilidades
+            margin-top: 5rem
+            .img-skills
+                grid-template-columns: repeat(4, 1fr)
+                grid-template-rows: repeat(3, 1fr)
+                grid-row-gap: 1.25rem

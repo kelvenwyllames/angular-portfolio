@@ -20,11 +20,11 @@
             background-clip: text
             -webkit-background-clip: text
             -webkit-text-fill-color: transparent
-            font-size: 4.5rem
+            font-size: 4.4rem
             font-weight: 800
 
         :nth-child(3)
-            font-size: 2.25rem
+            font-size: 2.5rem
             font-weight: 600
     
     img
@@ -54,18 +54,55 @@
     .s-header
         margin-top: 10rem
         flex-direction: column
+        h1
+            :nth-child(2)
+                font-size: 4.6rem
+
+            :nth-child(3)
+                font-size: 2.6rem
+
+        img
+            width: 14rem
+
+
+@media (max-width: 768px)
+    .s-header
+        margin-top: 8rem  
+        h1
+            :nth-child(2)
+                font-size: 3.7rem
+
+            :nth-child(3)
+                font-size: 2.3rem
+
+        img
+            width: 12rem
 
 @media (max-width: 576px)
     .s-header
+        margin-top: 7rem
+        h1
+            :nth-child(2)
+                font-size: 2.9rem
+
+            :nth-child(3)
+                font-size: 1.7rem
+
+        img
+            width: 9rem
+
+@media (max-width: 440px)
+    .s-header
+        margin-top: 5rem
         h1
             :nth-child(1)
                 font-size: 0.8rem
-            
+
             :nth-child(2)
                 font-size: 2rem
 
             :nth-child(3)
-                font-size: 1.25rem
+                font-size: 1.2rem
 
         img
-            width: 14rem
+            width: 7rem

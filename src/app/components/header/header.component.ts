@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   typewriter: string = '';
   phrases: string[] = [
-    'DESENVOLVEDOR FRONT-END.',
-    'PROGRAMADOR FRONT-END.',
-    'FRONT-END DEVELOPER.',
-    'DESENVOLVEDOR FULL-STACK',
+    'Desenvolvedor Front-End',
+    'Programador Front-End',
+    'Front-End Developer',
+    'Desenvolvedor Full-Stack',
   ];
   currentPhraseIndex: number = 0;
   index: number = 0;

@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SectionTitleComponent } from './shared/components/section-title/section-title.component';
+import { SkillsComponent } from './shared/components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SectionTitleComponent } from './shared/components/section-title/section
     NavbarComponent,
     HeaderComponent,
     AboutMeComponent,
-    SectionTitleComponent
+    SectionTitleComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
