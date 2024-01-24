@@ -1,122 +1,66 @@
-.s_header
+.s-header
     width: 100%
-    height: 924px
+    height: 864px
     display: flex
-    align-items: center
     justify-content: center
-    flex-direction: row
-    gap: 30px
+    align-items: center
+    gap: 1rem
 
-    .container_text
-        width: 740px
-        height: 150px
+    h1
+        display: flex
+        flex-direction: column
+        color: #fff
 
-        h1
-            display: flex
-            flex-direction: column
-            color: #fff
+        :nth-child(1)
+            font-size: 1rem
+            font-weight: 400
+        
+        :nth-child(2)
+            font-size: 4.5rem
+            font-weight: 800
 
-        .hola
-            font-size: 16px
-            font-weight: 300
+        :nth-child(3)
+            font-size: 2.25rem
+            font-weight: 600
+    
+    img
+        width: 18rem
+        animation: swinging 2s linear 0s infinite normal none
 
-        .my_name
-            font-size: 78px
+        @keyframes swinging
+            0%
+                transform: translate(0)
 
-        .typewriter
-            font-size: 38px
+            20%
+                transform: translate(-2px, 2px)
 
-        .my_name, .typewriter
-            background: #E64A19
-            background: linear-gradient(to right, #E64A19 0%, #ed6022 100%)
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
+            40%
+                transform: translate(-2px, -2px)
 
-    .photo_programming
-        width: 500px
-        height: 500px
-        z-index: -1
+            60%
+                transform: translate(2px, 2px)
 
-        img
-            width: 100%
-            height: 100%
-            animation: swinging 2s linear 0s infinite normal none
+            80%
+                transform: translate(2px, -2px)
 
-            @keyframes swinging
-                0%
-                    transform: translate(0)
+            100%
+                transform: translate(0)
 
-                20%
-                    transform: translate(-2px, 2px)
-
-                40%
-                    transform: translate(-2px, -2px)
-
-                60%
-                    transform: translate(2px, 2px)
-
-                80%
-                    transform: translate(2px, -2px)
-
-                100%
-                    transform: translate(0)
-
-@media (max-width: 1400px)
-    .s_header
-        padding-top: 168px
+@media (max-width: 992px)
+    .s-header
         flex-direction: column
 
-@media (max-width: 768px)
-    .s_header
-        .container_text
-            width: 550px
-            height: 125px
-            .hola
-                font-size: 16px
-                font-weight: 300
-
-            .my_name
-                font-size: 58px
-
-            .typewriter
-                font-size: 28px
-
 @media (max-width: 576px)
-    .s_header
-        padding-top: 0
-        .container_text
-            width: 418px
-            height: 95px
-            .hola
-                font-size: 16px
-                font-weight: 300
+    .s-header
+        h1
+            :nth-child(1)
+                font-size: 0.8rem
+            
+            :nth-child(2)
+                font-size: 2rem
 
-            .my_name
-                font-size: 44px
+            :nth-child(3)
+                font-size: 1.25rem
 
-            .typewriter
-                font-size: 22px
-        
-        .photo_programming
-            width: 300px
-            height: 300px
-
-@media only screen and (max-width: 440px)
-    .s_header
-        padding-top: 0
-        .container_text
-            width: 323px
-            height: 95px
-            .hola
-                font-size: 12px
-                font-weight: 300
-
-            .my_name
-                font-size: 34px
-
-            .typewriter
-                font-size: 16px
-        
-        .photo_programming
-            width: 300px
-            height: 300px
+        img
+            width: 14rem

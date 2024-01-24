@@ -1,107 +1,77 @@
 nav
-    position: fixed
-    width: 782px
-    height: 50px
-    top: 40px
+  width: 100%
+  height: 3rem
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+
+  h2
+    color: #fff
+
+  .links
     display: flex
-    justify-content: center
-    align-items: center
-    border-radius: 8px
-    background: #E64A19
+    gap: 2rem
 
-    a 
-        position: relative
-        display: inline-block
-        font-size: 16px
-        color: #fff
-        text-decoration: none
-        padding: 0 23px
-        z-index: 1
+    a
+      text-decoration: none
+      color: #fff
+  
+  .toggle_btn
+    position: static
+    display: none
+    cursor: pointer
+    font-size: 1.5rem
+    color: #fff
 
-    span 
-        position: absolute
-        top: 0
-        left: 0
-        width: 95px
-        height: 100%
-        background: #ed6022
-        border-radius: 8px
-        transition: .5s ease
+  .social
+    display: flex
+    gap: 0.4rem
+
+    a
+      width: 2rem
+      height: 2rem
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 1.3rem
+      text-decoration: none
+      border-radius: 0.2rem
+      color: #fff
+      background: #a1300b96
+
+      &:hover
+        background: #a1310b
+
+  .dropdown_menu
+    position: absolute
+    display: none
+    height: 0
+    top: 60px
+    border-radius: 0.6rem
+    background: rgba(255, 255, 255, 0.1)
+    backdrop-filter: blur(15px)
+    overflow: hidden
+    transition: 600ms
+
+    a
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0.7rem
+      text-decoration: none
+      color: #fff
+  
+  .dropdown_menu.open
+    height: 15rem
+
+@media (max-width: 992px)
+  nav
+    .links
+      display: none
     
     .toggle_btn
-      position: absolute
-      display: none
-      width: 50px
-      height: 50px
-      right: 15%
-      color: #fff
-      cursor: pointer
-      font-size: 24px
-      border-radius: 50%
-      background: #ed6022
+      display: block
 
     .dropdown_menu
-      position: relative
-      display: none
-      top: 267px
-      height: 0
-      width: 1000%
-      background-color: rgba(0,0,0,0.65)
-      z-index: -1
-      backdrop-filter: blur(10px)
-      overflow: hidden
-      transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-
-      a
-        display: flex
-        align-items: center
-        justify-content: center
-        margin-top: 55px
-
-    .dropdown_menu.open
-      height: 1000%
-
-nav a:nth-child(1):hover ~ span
-  width: 100px
-  left: 0
-
-nav a:nth-child(2):hover ~ span
-  width: 135px
-  left: 95px
-
-nav a:nth-child(3):hover ~ span 
-  width: 130px
-  left: 235px
-
-nav a:nth-child(4):hover ~ span 
-  width: 115px
-  left: 365px
-
-nav a:nth-child(5):hover ~ span
-  width: 125px
-  left: 490px
-
-nav a:nth-child(6):hover ~ span
-  width: 155px
-  left: 626px
-
-@media(max-width: 992px)
-  nav
-    width: 100%
-    background: none
-
-  nav .links
-    display: none
-
-  nav .toggle_btn
-    display: block
-    text-align: center
-    padding: 12.5px 10px 10px 10px
-
-  nav .dropdown_menu
-    display: block
-
-    span
-      display: none 
-
-
+      display: block
+      width: 96%
