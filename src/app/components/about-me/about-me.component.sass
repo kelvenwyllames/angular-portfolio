@@ -1,17 +1,16 @@
+@import ../../variables
+
 .s-about
-    width: 100%
-    height: 924px
-    display: flex
-    justify-content: center
-    align-items: center
+    width: $element-width
+    height: $element-height
+    @include flexbox
     flex-direction: column
     gap: 3rem
+    margin-top: $primary-margin-top
 
     .container-about
-        width: 100%
-        display: flex
-        justify-content: center
-        align-items: center
+        width: $element-width
+        @include flexbox
         flex-direction: row
 
         img
@@ -37,18 +36,14 @@
                 color: #c5c0c0
 
             .social-flex-profile
-                display: flex
-                justify-content: center
-                align-items: center
+                @include flexbox
                 flex-direction: row
                 gap: 1.5rem
 
                 .bg-social-profile
                     width: 3rem
                     height: 3rem
-                    display: flex
-                    justify-content: center
-                    align-items: center
+                    @include flexbox
                     margin-top: 1.5rem
                     font-size: 1.5rem
                     border-radius: 6px
@@ -61,16 +56,14 @@
                         text-decoration: none
 
                         &:hover
-                            color: #e64a19
+                            color: $secondary-color
 
                     &:hover
                         transform: scale(1.15)
-                        border: 2.5px solid #e64919c5
+                        border: 2.5px solid $quaternary-color-with-opacity
 
     .container-habilidades
-        display: flex
-        justify-content: center
-        align-items: center
+        @include flexbox
         flex-direction: column
 
         .img-skills

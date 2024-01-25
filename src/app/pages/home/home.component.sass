@@ -1,11 +1,11 @@
+@import ../../variables
+
 .s-projects
-    width: 100vw
-    height: 80%
-    display: flex
-    justify-content: center
-    align-items: center
+    width: $element-width
+    height: $element-height
+    @include flexbox
     flex-direction: column
-    margin-top: 5rem
+    margin-top: $secondary-margin-top
 
     .sub-title-projects 
         padding: 2rem
@@ -16,18 +16,28 @@
         gap: 4.5rem
 
     button
-        color: #FFFFFF !important
+        color: $color-light !important
         font-size: 1rem
         padding: 10px 25px
         border-radius: 4px
         margin-top: 5rem
         cursor: pointer
-        border: 0px solid #FFFFFF
-        background: #E65100
+        border: 0px solid $color-light
+        background: $primary-color-background
         
         button:hover
-            background: #CC3F02
+            background: $primary-color-background
 
+.s-certificates
+    width: $element-width
+    height: $element-height
+    @include flexbox
+    flex-direction: column
+    margin-top: $secondary-margin-top
+
+    app-certificates
+        display: flex
+        gap: 1.5rem
 
 @media (max-width: 1400px)
     .s-projects
@@ -40,7 +50,6 @@
         .grid-projects
             grid-template-columns: repeat(1, 1fr)
             grid-template-rows: repeat(1, 1fr)
-
             
 
 
