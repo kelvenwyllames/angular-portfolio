@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SectionTitleComponent } from './shared/components/section-title/section-title.component';
 import { SkillsComponent } from './shared/components/skills/skills.component';
+import { MyProjectsComponent } from './components/my-projects/my-projects.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,11 @@ import { SkillsComponent } from './shared/components/skills/skills.component';
     HeaderComponent,
     AboutMeComponent,
     SectionTitleComponent,
-    SkillsComponent
+    SkillsComponent,
+    MyProjectsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -4,4 +4,35 @@
 </header>
 <main>
   <app-about-me></app-about-me>
+  <section class="s-projects" id="nav-projects">
+    <div class="section-title-projects">
+      <app-section-title
+        numberPage="03."
+        titlePage="Projetos"
+      ></app-section-title>
+    </div>
+    <ul class="grid-projects">
+      <li
+        *ngFor="let project of projects; let i = index"
+        [hidden]="i >= projectsToShow"
+      >
+        <app-my-projects
+          [imgproject]="project.imgproject"
+          [altimgproject]="project.altimgproject"
+          [titleproject]="project.titleproject"
+          [imgskills1]="project.imgskills1"
+          [altskills1]="project.altskills1"
+          [imgskills2]="project.imgskills2"
+          [altskills2]="project.altskills2"
+          [imgskills3]="project.imgskills3"
+          [altskills3]="project.altskills3"
+          [imgskills4]="project.imgskills4"
+          [altskills4]="project.altskills4"
+          [imgskills5]="project.imgskills5"
+          [altskills5]="project.altskills5"
+        ></app-my-projects>
+      </li>
+    </ul>
+    <button type="button" (click)="loadMoreProjects()">Carregar Mais</button>
+  </section>
 </main>

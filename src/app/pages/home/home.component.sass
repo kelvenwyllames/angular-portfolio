@@ -1,0 +1,46 @@
+.s-projects
+    width: 100vw
+    height: 80%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin-top: 5rem
+
+    .sub-title-projects 
+        padding: 2rem
+
+    .grid-projects
+        display: grid
+        grid-template-columns: repeat(3, 2fr)
+        gap: 4.5rem
+
+    button
+        color: #FFFFFF !important
+        font-size: 1rem
+        padding: 10px 25px
+        border-radius: 4px
+        margin-top: 5rem
+        cursor: pointer
+        border: 0px solid #FFFFFF
+        background: #E65100
+        
+        button:hover
+            background: #CC3F02
+
+
+@media (max-width: 1400px)
+    .s-projects
+        .grid-projects
+            grid-template-columns: repeat(2, 2fr)
+            grid-template-rows: repeat(2, 1fr)
+
+@media (max-width: 992px)
+    .s-projects
+        .grid-projects
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: repeat(1, 1fr)
+
+            
+
+
