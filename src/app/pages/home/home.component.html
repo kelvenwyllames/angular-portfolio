@@ -30,12 +30,17 @@
           [altskills4]="project.altskills4"
           [imgskills5]="project.imgskills5"
           [altskills5]="project.altskills5"
+          [technology1]="project.technology1"
+          [technology2]="project.technology2"
+          [technology3]="project.technology3"
+          [technology4]="project.technology4"
+          [technology5]="project.technology5"
         ></app-my-projects>
       </li>
     </ul>
     <button type="button" (click)="loadMoreProjects()">Carregar Mais</button>
   </section>
-  <section class="s-certificates">
+  <section class="s-certificates" id="nav-certificate">
     <div class="section-title-projects">
       <app-section-title
         numberPage="04."
@@ -48,34 +53,36 @@
       certificatesalt="Santander Bootcamp 2023 - Fullstack Java+Angular"
       certificatestitle="Santander Bootcamp 2023 - Fullstack Java+Angular"
       certifiicatesdescription="Participei do bootcamp Full Stack Java + Angular na Digital Innovation One (DIO) com duração de 115 horas foi uma jornada intensa que aprimorou minhas habilidades em desenvolvimento web e Full Stack. Durante o programa, tive a oportunidade de me aprofundar em diversas áreas."
-      certificatesskillsimg1="assets\html.svg"
+      certificatesskillsimg1="assets\img-skills-projects\html5.svg"
       certificatesskillsalt1="html5"
-      certificatesskillsimg2="assets\css.png"
+      certificatesskillsimg2="assets\img-skills-projects\css.svg"
       certificatesskillsalt2="css3"
-      certificatesskillsimg3="assets\javascript.svg"
+      certificatesskillsimg3="assets\img-skills-projects\javascript.svg"
       certificatesskillsalt3="javascript"
-      certificatesskillsimg4=""
-      certificatesskillsalt4=""
-      certificatesskillsimg5=""
-      certificatesskillsalt5=""
-      certificatesskillsimg6=""
-      certificatesskillsalt6=""
-      certificatesskillsimg7=""
-      certificatesskillsalt7=""
-      certificatesskillsimg8=""
-      certificatesskillsalt8=""
-      certificatesskillsimg9=""
-      certificatesskillsalt9=""
-      certificatesskillsimg10=""
-      certificatesskillsalt10=""
-      certificatesskillsimg11=""
-      certificatesskillsalt11=""
-      certificatesskillsimg12=""
-      certificatesskillsalt12=""
-      certificatesskillsimg13=""
-      certificatesskillsalt13=""
-      certificatesskillsimg14=""
-      certificatesskillsalt14=""
+      certificatesskillsimg4="assets\img-skills-projects\angular.svg"
+      certificatesskillsalt4="angular"
+      certificatesskillsimg5="assets\img-skills-projects\typescript.svg"
+      certificatesskillsalt5="typescript"
+      certificatesskillsimg6="assets\img-skills-projects\java.png"
+      certificatesskillsalt6="java"
+      certificatesskillsimg7="assets\img-skills-projects\git.svg"
+      certificatesskillsalt7="git"
+      certificatesskillsimg8="assets\img-skills-projects\github.svg"
+      certificatesskillsalt8="github"
+      certificatesskillsimg9="assets\img-skills-projects\sql.png"
+      certificatesskillsalt9="sql"
+      certificatesskillsimg10="assets\img-skills-projects\nosql.png"
+      certificatesskillsalt10="nosql"
+      certificatesskillsimg11="assets\img-skills-projects\maven.png"
+      certificatesskillsalt11="maven"
+      certificatesskillsimg12="assets\img-skills-projects\junit.png"
+      certificatesskillsalt12="junit"
+      certificatesskillsimg13="assets\img-skills-projects\spring-boot.png"
+      certificatesskillsalt13="spring-boot"
     ></app-certificates>
   </section>
+  <app-talk-to-me></app-talk-to-me>
 </main>
+<footer>
+  <app-footer></app-footer>
+</footer>

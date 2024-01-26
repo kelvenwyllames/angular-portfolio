@@ -12,6 +12,7 @@
         width: $element-width
         @include flexbox
         flex-direction: row
+        gap: 5rem
 
         img
             width: 350px
@@ -70,7 +71,7 @@
             display: grid
             grid-template-columns: repeat(11, 1fr)
             grid-template-rows: 1fr
-            grid-column-gap: 1.25rem
+            grid-column-gap: 2rem
 
 @media (max-width: 992px)
     .s-about
@@ -90,8 +91,10 @@
 
 @media (max-width: 576px)
     .s-about
-        height: 1250px
+        height: 900px
         .container-about
+            img
+                width: 250px
             .right-about
                 p
                     width: 50%
@@ -102,4 +105,20 @@
             .img-skills
                 grid-template-columns: repeat(4, 1fr)
                 grid-template-rows: repeat(3, 1fr)
+                grid-row-gap: 1.25rem
+
+@media (max-width: 440px)
+    .s-about
+        .container-about
+            img
+            .right-about
+                p
+                    width: 45%
+                    font-size: 0.838rem
+
+        .container-habilidades
+            margin-top: 10rem
+            .img-skills
+                grid-template-columns: repeat(3, 1fr)
+                grid-template-rows: repeat(4, 1fr)
                 grid-row-gap: 1.25rem

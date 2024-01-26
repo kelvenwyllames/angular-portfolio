@@ -1,0 +1,37 @@
+@import ../../../variables
+
+.social-media
+    @include flexbox
+    flex-direction: row
+    gap: 3.5rem
+
+    .social-media-icon
+        @include flexbox
+        flex-direction: column
+        gap: 0.5rem
+
+        > a
+            @include flexbox
+            width: 80px
+            height: 80px
+            font-size: 36px
+            border-radius: 50%
+            color: #7d7f81
+            border: 2.5px solid rgba(65, 62, 62, 0.76)
+            background-color: #1a1a1a
+            text-decoration: none
+
+            &:hover
+                border: 2.5px solid $quaternary-color-with-opacity
+                color: $secondary-color
+
+        > h2
+            font-size: 20px
+            color: $color-light
+
+        > p
+            color: $color-light-with-opacity
+
+@media (max-width: 992px)
+    .social-media
+        flex-direction: column

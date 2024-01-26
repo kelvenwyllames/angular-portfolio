@@ -6,6 +6,15 @@ import { Component, AfterViewInit } from '@angular/core';
   styleUrls: ['./navbar.component.sass'],
 })
 export class NavbarComponent implements AfterViewInit {
+  scrollToElement(elementId: string) {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  }
+
   ngAfterViewInit(): void {
     const toggleBtn: HTMLElement | null = document.querySelector('.toggle_btn');
     const toggleBtnIcon: HTMLElement | null =

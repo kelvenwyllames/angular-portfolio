@@ -1,0 +1,46 @@
+@import ../../variables
+
+footer 
+    width: $element-width
+    height: 10rem
+    display: grid
+    place-content: center
+    place-items: center
+    color: #fff
+    background-color: #141414
+    margin-top: $primary-margin-top
+
+    .name-logo 
+        font-size: 1.8rem
+        font-weight: 700
+        color: #ff6d00
+  
+        .point 
+            color: #fff
+
+    .icon 
+        @include flexbox
+        margin: 0.5rem 0 0.5rem 0
+        gap: 1.5rem
+        cursor: pointer
+        font-size: 2rem
+        color: #fff
+
+        a 
+            text-decoration: none
+            transition: 0.5s all ease-in-out
+
+            &:hover
+                transform: scale(1.29)
+
+        &:hover 
+            color: #ff6d00
+            
+
+    .icon-copyright 
+        margin-right: 0.25rem
+        font-size: 0.7rem
+
+    .reserved,
+    .icon-copyright 
+        color: #ff6d00

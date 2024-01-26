@@ -8,7 +8,11 @@ nav
   justify-content: space-evenly
 
   h2
-    color: $color-light
+    background: $primary-linear-gradient
+    background-clip: text
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    cursor: pointer
 
   .links
     display: flex
@@ -17,7 +21,11 @@ nav
     a
       text-decoration: none
       color: $color-light
-  
+      cursor: pointer
+
+      &:hover
+        color: $primary-color
+
   .toggle_btn
     position: static
     display: none

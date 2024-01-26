@@ -1,12 +1,12 @@
 <nav>
-  <h2>Kelven</h2>
+  <h2 (click)="scrollToElement('nav-header')">Kelven</h2>
   <div class="links">
-    <a href="#">Início</a>
-    <a href="#">Sobre Mim</a>
-    <a href="#">Tecnologias</a>
-    <a href="#">Projetos</a>
-    <a href="#">Certificados</a>
-    <a href="#">Fale Comigo</a>
+    <a (click)="scrollToElement('nav-header')">Início</a>
+    <a (click)="scrollToElement('nav-about')">Sobre Mim</a>
+    <a (click)="scrollToElement('nav-skills')">Tecnologias</a>
+    <a (click)="scrollToElement('nav-projects')">Projetos</a>
+    <a (click)="scrollToElement('nav-certificate')">Certificados</a>
+    <a (click)="scrollToElement('nav-footer')">Fale Comigo</a>
   </div>
   <div class="social">
     <a href=""><i class="fa-brands fa-github"></i></a>
@@ -18,11 +18,11 @@
   </div>
 
   <div class="dropdown_menu open">
-    <a href="#">Início</a>
-    <a href="#">Sobre Mim</a>
-    <a href="#">Tecnologias</a>
-    <a href="#">Projetos</a>
-    <a href="#">Certificados</a>
-    <a href="#">Fale Comigo</a>
+    <a (click)="scrollToElement('nav-header')">Início</a>
+    <a (click)="scrollToElement('nav-about')">Sobre Mim</a>
+    <a (click)="scrollToElement('nav-skills')">Tecnologias</a>
+    <a (click)="scrollToElement('nav-projects')">Projetos</a>
+    <a (click)="scrollToElement('nav-certificate')">Certificados</a>
+    <a (click)="scrollToElement('nav-footer')">Fale Comigo</a>
   </div>
 </nav>

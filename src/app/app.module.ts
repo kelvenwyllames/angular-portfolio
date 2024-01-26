@@ -10,6 +10,9 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SectionTitleComponent } from './shared/components/section-title/section-title.component';
 import { MyProjectsComponent } from './components/my-projects/my-projects.component';
 import { CertificatesComponent } from './components/certificates/certificates.component';
+import { TalkToMeComponent } from './components/talk-to-me/talk-to-me.component';
+import { SocialMediaIconsComponent } from './shared/components/social-media-icons/social-media-icons.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { CertificatesComponent } from './components/certificates/certificates.co
     SectionTitleComponent,
     MyProjectsComponent,
     CertificatesComponent,
+    TalkToMeComponent,
+    SocialMediaIconsComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

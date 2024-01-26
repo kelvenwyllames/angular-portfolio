@@ -19,4 +19,9 @@ export class MyProjectsComponent {
   @Input() altskills3: string = '';
   @Input() altskills4: string = '';
   @Input() altskills5: string = '';
+  @Input() technology1: string = '';
+  @Input() technology2: string = '';
+  @Input() technology3: string = '';
+  @Input() technology4: string = '';
+  @Input() technology5: string = '';
 }
