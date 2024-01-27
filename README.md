@@ -8,7 +8,7 @@ O portfólio possui uma página inicial que exibe meu nome com um efeito de type
 
 ## Demonstração
 
-Em breve.
+![Design sem nome](https://github.com/kelvenwyllames/angular-portfolio/assets/129474131/fa6c3c5f-3b35-4bd1-af2d-dcb7d6083cfb)
 
 ## Tecnologias Utilizadas
 
