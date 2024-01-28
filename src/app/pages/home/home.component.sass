@@ -24,9 +24,11 @@
         cursor: pointer
         border: 0px solid $color-light
         background: $primary-color-background
-        
-        button:hover
+        transition: 600ms
+
+        &:hover
             background: $primary-color-background
+            transform: scale(0.95)
 
 .s-certificates
     width: $element-width
@@ -34,6 +36,7 @@
     @include flexbox
     flex-direction: column
     margin-top: $secondary-margin-top
+    background: #111111
 
     app-certificates
         display: flex
